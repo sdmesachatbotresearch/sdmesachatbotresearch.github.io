@@ -1,9 +1,10 @@
 const survey = new Survey.Model(json);
+const serverURL = new URL("http://mizuserver.ddns.net/submitForm.php/")
 survey.onComplete.add((sender, options) => {
     // Display the "Saving..." message (pass a string value to display a custom message)
     options.showSaveInProgress();
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "submitForm.php");
+    xhr.open("POST", serverURL.pathname);
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
     xhr.onload = xhr.onerror = function () {
       if (xhr.status == 200) {
