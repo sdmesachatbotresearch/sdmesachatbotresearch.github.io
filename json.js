@@ -184,10 +184,6 @@ const json = {
           "title": "For what purpose do you use AI? (Mark ALL that apply)",
           "choices": [
             {
-              "value": "no",
-              "text": "I don't use AI"
-            },
-            {
               "value": "school",
               "text": "For schoolwork"
             },
@@ -203,7 +199,9 @@ const json = {
               "value": "other",
               "text": "Other"
             }
-          ]
+          ],
+          "showNoneItem": true,
+          "noneText": "I don't use AI"
         }
       ]
     },
