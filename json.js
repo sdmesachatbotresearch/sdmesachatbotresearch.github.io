@@ -76,9 +76,12 @@ const json = {
             {
               "value": "prefer-no-answer",
               "text": "I prefer not to answer"
+            },
+            {
+              "value": "other",
+              "text": "Other"
             }
-          ],
-          "showOtherItem": true
+          ]
         },
         {
           "type": "checkbox",
