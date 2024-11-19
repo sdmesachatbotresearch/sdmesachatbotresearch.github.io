@@ -3,7 +3,7 @@ survey.onComplete.add((sender, options) => {
     // Display the "Saving..." message (pass a string value to display a custom message)
     options.showSaveInProgress();
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://mizuserver.ddns.net/submitForm.php/");
+    xhr.open("POST", "https://mizuserver.ddns.net/submitForm.php");
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
     xhr.onload = xhr.onerror = function () {
       if (xhr.status == 200) {
