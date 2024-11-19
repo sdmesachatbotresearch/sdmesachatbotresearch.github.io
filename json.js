@@ -53,7 +53,9 @@ const json = {
           "title": "What is your age in years?",
           "isRequired": true,
           "inputType": "number",
-          "step": 1
+          "min": 0,
+          "max": 130,
+          "step": -6
         },
         {
           "type": "radiogroup",
@@ -298,14 +300,9 @@ const json = {
     {
       "name": "page1",
       "title": "Human Counselor and Chatbot: Preference",
-      "description": "\n",
+      "description": "For the following mental health topics, who would you prefer to talk to/discuss with?\n",
       "questionsOrder": "random",
       "elements": [
-        {
-          "type": "html",
-          "name": "panel2",
-          "html": "<p>\nFor the following mental health topics, who would you <b>prefer</b> to talk to/discuss with?\n</p>"
-        },
         {
           "type": "radiogroup",
           "name": "pref-depression",
